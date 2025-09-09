@@ -4,6 +4,11 @@ section.hero {
   padding: 2.5rem 2rem;
   margin-inline: auto;
 
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
   & h1 {
     max-width: 40rem;
   }
@@ -67,6 +72,47 @@ section.hero {
     & .shadow {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 9px 9px rgba(0, 0, 0, 0.09),
         0 20px 12px rgba(0, 0, 0, 0.05), 0 36px 15px rgba(0, 0, 0, 0.01);
+    }
+  }
+
+  & > div:nth-child(2) {
+    display: block;
+    width: 100%;
+    max-width: 30.5rem;
+    height: 30.5rem;
+
+    & .content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    & img {
+      position: absolute;
+      width: 100%;
+    }
+
+    & img[src*="Elipse"] {
+      width: 94%;
+      top: 1%;
+      left: 3%;
+    }
+
+    & img[src*="patins"] {
+      z-index: 1;
+    }
+
+    & img[src*="Stars-1"] {
+      max-width: 5.5rem;
+      top: 30%;
+      z-index: 0;
+    }
+
+    & img[src*="Stars-2"] {
+      max-width: 2.5rem;
+      right: 0;
+      bottom: 35%;
+      z-index: 0;
     }
   }
 }
