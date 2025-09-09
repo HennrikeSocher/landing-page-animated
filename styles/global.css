@@ -8,11 +8,11 @@
 
 :root {
   --snitap-sun: #ffcd1e;
-  --sniptap-sky-mid: #06b6d4;
-  --sniptap-sky-light: #67e8f9;
+  --snitap-sky-mid: #06b6d4;
+  --snitap-sky-light: #67e8f9;
   --snitap-joy-mid: #db2777;
   --snitap-joy-light: #f472b6;
-  --sniptap-leaf-mid: #16a34a;
+  --snitap-leaf-mid: #16a34a;
   --text: #000000;
   --background: #fafafa;
   --highlight: #000000;
@@ -43,4 +43,9 @@ h1 {
 h2 {
   font-size: 2.5rem;
   line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
