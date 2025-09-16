@@ -1,9 +1,9 @@
 *,
-*::before,
-**::after {
+*::after,
+*::before {
   margin: 0;
-  box-sizing: border-box;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -13,9 +13,10 @@
   --snitap-joy-mid: #db2777;
   --snitap-joy-light: #f472b6;
   --snitap-leaf-mid: #16a34a;
+
   --text: #000000;
+  --highlights: #000000;
   --background: #fafafa;
-  --highlight: #000000;
 
   --ff-base: "Montserrat", sans-serif;
 
@@ -36,12 +37,12 @@ h2 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: var(--text-xl);
   line-height: 1.25;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: var(--text-lg);
   line-height: 1.2;
 }
 
